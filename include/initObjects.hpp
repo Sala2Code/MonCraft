@@ -15,5 +15,9 @@ void init2D(GLuint &EBO);
 void initBlock(bufferComp &buffer, std::vector<unsigned short> &iBlock);
 Player initPlayer(bufferComp &buffer, std::vector<unsigned short> &iPlayer, glm::vec3 pos_player);
 
+void genBuf_Depth(GLuint &buffer);
+void genBuf_Water(GLuint &FBO, GLuint &texture, GLuint &depth);
+
+
 
 #endif
