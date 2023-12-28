@@ -111,3 +111,27 @@ Player initPlayer(bufferComp &buffer, std::vector<unsigned short> &iPlayer, glm:
 	generateBuffer(player.bufferHitBox, player.iHitBox, player.i_verticesHitBox, player.i_uvsHitBox, player.i_normalsHitBox);
 	return player;
 }
+
+void genBuf_Depth(GLuint &buffer){
+	glGenRenderbuffers(1, &buffer);
+    glBindRenderbuffer(GL_RENDERBUFFER, buffer);
+    glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT, width, height);
+    // glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, buffer);
+}
+
+void genBuf_Water(GLuint &FBO, GLuint &texture, GLuint &depthbuffer){
+	glGenFramebuffers(1, &FBO);
+	glBindFramebuffer(GL_FRAMEBUFFER, FBO); 
+
+	glGenTextures(1, &texture);
+	glBindTexture(GL_TEXTURE_2D, texture);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL); 
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, texture, 0);
+
+	glBindRenderbuffer(GL_RENDERBUFFER, depthbuffer);
+	glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, depthbuffer);
+
+	glBindFramebuffer(GL_FRAMEBUFFER, 0);
+}
