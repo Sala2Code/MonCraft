@@ -1,0 +1,87 @@
+{
+    "dirt": {
+        "texture": "img/Block/Map/dirt.bmp",
+        "id": [0,1,2]
+    },
+    
+
+    "grass_up": {
+        "texture": "img/Block/Map/grass_up.bmp",
+        "id": 3
+    },
+    "grass_side": {
+        "texture": "img/Block/Map/grass_side.bmp",
+        "id": 4
+    },
+    "grass_down": {
+        "texture": "img/Block/Map/grass_down.bmp",
+        "id": 5
+    },
+
+
+    "grass_taiga_up": {
+        "texture": "img/Block/Map/grass_taiga_up.bmp",
+        "id": 6
+    },
+    "grass_taiga_side": {
+        "texture": "img/Block/Map/grass_taiga_side.bmp",
+        "id": 7
+    },
+    "grass_taiga_down": {
+        "texture": "img/Block/Map/dirt.bmp",
+        "id": 8
+    },
+
+
+    
+    "grass_swamp_up": {
+        "texture": "img/Block/Map/grass_swamp_up.bmp",
+        "id": 9
+    },
+    "grass_swamp_side": {
+        "texture": "img/Block/Map/grass_swamp_side.bmp",
+        "id": 10
+    },
+    "grass_swamp_down": {
+        "texture": "img/Block/Map/grass_down.bmp",
+        "id": 11
+    },
+
+
+
+    "sand": {
+        "texture": "img/Block/Map/sand.bmp",
+        "id": [12,13,14]
+    },
+    "snow": {
+        "texture": "img/Block/Map/snow.bmp",
+        "id": [15,16,17]
+    },
+    "stone": {
+        "texture": "img/Block/Map/stone.bmp",
+        "id": [18,19,20]
+    },
+
+
+    "oak_up_down" : {
+        "texture": "img/Block/Environment/oak_up.bmp",
+        "id": [21,23]
+    },
+    "oak_side" : {
+        "texture": "img/Block/Environment/oak_side.bmp",
+        "id": 22
+    },
+    "oak_leaves" : {
+        "texture": "img/Block/Environment/oak_leaves.bmp",
+        "id": [24,25,26]
+    },
+
+    "fol_grass" : {
+        "texture": "img/Block/Foliages/fol_grass.bmp",
+        "id": [27,28,29]
+    },
+    "fol_desert" : {
+        "texture": "img/Block/Foliages/fol_desert.bmp",
+        "id": [30,31,32]
+    }
+}
