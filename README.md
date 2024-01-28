@@ -7,6 +7,7 @@ The project is still in development, so there are still some bugs and some featu
 # Compile
 To compile the code, see the MakeFile to update the path of lib/include. If you have a problem with these files, check the repository of the project (RetroRoad), I suggest in FILE the same lib/include.
 
+# Gallery
 
 ![image](https://github.com/Sala2Code/MonCraft/assets/109032171/d9fa771a-fe87-4b37-86e1-d789f200a7d7)
 
